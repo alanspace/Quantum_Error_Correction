@@ -61,9 +61,8 @@ Implementing the initialization, rounds, and final measurement steps with the co
 The final sections of the notebook are dedicated to simulating the performance of the surface code you've built. Using sinter, we will:
 
 Find the Threshold: Run simulations across various code distances and physical error rates to find the "break-even" point where increasing the code's size begins to suppress logical errors.
-<img src="https://i.imgur.com/gO0tA7M.png" alt="Logical Error per Round Plot" width="600"/>
+
 Project Performance: Use the data from the simulations to create a projection of the code distance required to achieve a target logical error rate, such as surviving for a trillion rounds of operation.
-<img src="https://i.imgur.com/GzB9T3y.png" alt="Performance Projection Plot" width="600"/>
 
 🌟 Review
 By the end of this lab, we will have moved from the abstract theory of the surface code to a concrete, working, and noisy implementation.

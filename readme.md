@@ -6,7 +6,7 @@ Surface Code in Stim
 
 This repository contains a hands-on programming lab designed to construct, visualize, and simulate the surface code for quantum error correction using Google's high-performance quantum circuit simulator, Stim.
 
-This lab is structured as a Jupyter Notebook that guides you through the process of building a complete surface code circuit from the ground up. We will implement the core logic in a separate Python file, surface_code.py, and use the notebook to test, visualize, and analyze the implementation.
+This lab is structured as a Jupyter Notebook that runs through the process of building a complete surface code circuit from the ground up. We will implement the core logic in a separate Python file, surface_code.py, and use the notebook to test, visualize, and analyze the implementation.
 
 🚀 Learning Objectives
 By completing this lab, we will:
@@ -15,13 +15,13 @@ Understand Qubit Layout: Grasp a practical qubit indexing and coordinate system 
 Visualize Quantum Circuits: Use Stim's powerful visualization tools, like timeline-svg and timeslice-svg, to debug and understand complex circuit structures.
 Build Stabilizer Circuits: Implement the precise gate ordering for parallel CNOT gates required for surface code stabilizer measurements.
 Construct a Full Error-Correcting Circuit: Write Python code to generate a complete surface code circuit for any given distance and number of measurement rounds.
-Implement a Noise Model: Add realistic, circuit-level depolarizing noise to your circuit to simulate a real-world quantum device.
+Implement a Noise Model: Add realistic, circuit-level depolarizing noise to the circuit to simulate a real-world quantum device.
 Use Detectors and Observables: Correctly place DETECTOR and OBSERVABLE_INCLUDE instructions, which are essential for decoding and calculating the logical error rate.
 Simulate and Analyze Performance: Use the sinter library to run high-speed simulations, plot logical vs. physical error rates, identify the error-correcting threshold, and project the performance for large-scale applications.
 
 🛠️ Getting Started
 Prerequisites
-You need a Python environment with the following libraries installed:
+We need a Python environment with the following libraries installed:
 
 stim
 sinter
@@ -30,7 +30,7 @@ matplotlib
 numpy
 scipy
 jupyter
-You can install all dependencies using pip:
+We can install all dependencies using pip:
 
 Generated bash
 pip install stim sinter pymatching matplotlib numpy scipy jupyter
@@ -39,7 +39,7 @@ Bash
 Running the Lab
 Clone the Repository:
 Generated bash
-git clone https://github.com/your-username/surface-code-in-stim.git
+git clone https://github.com/alanspace/surface-code-in-stim.git
 cd surface-code-in-stim
 Use code with caution.
 Bash
@@ -58,7 +58,7 @@ Adding stabilizer measurements.
 Implementing the initialization, rounds, and final measurement steps with the correct detectors.
 
 📊 Simulation and Results
-The final sections of the notebook are dedicated to simulating the performance of the surface code you've built. Using sinter, we will:
+The final sections of the notebook are dedicated to simulating the performance of the surface code we've built. Using sinter, we will:
 
 Find the Threshold: Run simulations across various code distances and physical error rates to find the "break-even" point where increasing the code's size begins to suppress logical errors.
 
